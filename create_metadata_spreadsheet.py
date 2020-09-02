@@ -160,5 +160,5 @@ if __name__ == '__main__':
 
     total_metadata = total_metadata.rename(columns={"study_accession": "STUDY", "sample_accession": "SAMPLE",
                                                     "run_accession": "RUN_REF"})  # Change column names to match the manifest file headers
-    metadata_filename = args.project + "_Consensus_Metadata-TEST.txt"
+    metadata_filename = args.project + "_Consensus_Metadata.txt"
     total_metadata.to_csv(metadata_filename, sep="\t", index=False)
