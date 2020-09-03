@@ -25,7 +25,7 @@ do
 done
 
 gzip *_chromosomelist.txt
-ls *chromosomelist.txt > chromosome_list_files.txt
+ls *chromosomelist.txt.gz > chromosome_list_files.txt
 
 printf "number of chromosome list files generated: " 
-ls ./*chromosomelist.txt | wc -l
+ls ./*chromosomelist.txt.gz | wc -l
